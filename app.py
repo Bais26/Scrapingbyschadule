@@ -7,8 +7,8 @@ from datetime import datetime
 
 #config mongo
 def get_data():
-    client = MongoClient("mongodb://localhost:27017")
-    db = client["sign_language_db"]
+    client = MongoClient("mongodb+srv://baisyufan:nzPoNISBiZxLIKbn@bais.5y9mhli.mongodb.net/")
+    db = client["backend-capstone"]
     collection = db["articles"]
     data = list(collection.find())
     return pd.DataFrame(data)
