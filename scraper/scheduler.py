@@ -4,7 +4,7 @@ from scraper.article_scraper import scrape_and_store_articles
 
 def run_scheduler():
     # Jadwalkan scraping setiap hari pukul 08:00
-    schedule.every().day.at("21:29").do(scrape_and_store_articles)
+    schedule.every().day.at("01:22").do(scrape_and_store_articles)
 
     print("📅 Scheduler aktif. Menunggu waktu eksekusi...")
 

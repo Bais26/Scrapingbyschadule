@@ -17,7 +17,7 @@ def scrape_and_store_articles():
     articles = soup.select("article")
 
     results = []
-    for article in articles[:100]:  # Ambil maksimal 10
+    for article in articles[:100]:  # Ambil maksimal 100
         title = article.text.strip()
         link_tag = article.find("a")
         if link_tag:
